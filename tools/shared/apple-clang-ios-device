@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+sdk="$(xcrun --sdk iphoneos --show-sdk-path)"
+exec xcrun --sdk iphoneos clang \
+  -target arm64-apple-ios16.0 -isysroot "$sdk" "$@"

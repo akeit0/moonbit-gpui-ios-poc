@@ -1,0 +1,14 @@
+{
+  "gpui_dotnet": {
+    "url": "https://github.com/akeit0/gpui-dotnet.git",
+    "revision": "31420b25a99479d3169f4e922ca7a5bf1b09ffce"
+  },
+  "rust_toolchain": "1.98.0",
+  "moonbit": {
+    "version": "0.10.14+7d59c7ec9",
+    "toolchain_url": "https://cli.moonbitlang.com/binaries/0.10.14%2B7d59c7ec9/moonbit-darwin-aarch64.tar.gz",
+    "toolchain_sha256": "20967f9389ac54508899ee2fc051a3470d051452bac5818a9696ed4c144f3ec3",
+    "core_url": "https://cli.moonbitlang.com/cores/core-0.10.14%2B7d59c7ec9.tar.gz",
+    "core_sha256": "6f18b8fdea18f85e628a75e4a1bd3977c5a5c9c6a836fd8824192b0e6bd91b14"
+  }
+}

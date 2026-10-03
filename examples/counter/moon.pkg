@@ -1,0 +1,5 @@
+pkgtype(kind: "foreign_library")
+
+import { "moonbitlang/core/encoding/utf8" }
+
+options("native-stub": ["bridge.c", "arena.c", "commands.c"])

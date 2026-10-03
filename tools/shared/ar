@@ -1,0 +1,4 @@
+#!/bin/sh
+# Moon probes an archiver beside a compiler wrapper, even for --dry-run.
+set -eu
+exec xcrun --sdk iphonesimulator ar "$@"

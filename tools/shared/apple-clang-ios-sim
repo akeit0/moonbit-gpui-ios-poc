@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+sdk="$(xcrun --sdk iphonesimulator --show-sdk-path)"
+exec xcrun --sdk iphonesimulator clang \
+  -target arm64-apple-ios16.0-simulator -isysroot "$sdk" "$@"

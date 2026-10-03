@@ -1,0 +1,17 @@
+/artifacts/
+/.deps/
+/.tools/
+/.downloads/
+/moon-mobile.local.json
+*.mobileprovision
+*.p12
+*.p8
+*.cer
+*.pem
+*.key
+**/_build/
+**/.mooncakes/
+**/__pycache__/
+.DS_Store
+**/xcuserdata/
+**/*.xcodeproj/project.xcworkspace/

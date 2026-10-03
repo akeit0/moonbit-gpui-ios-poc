@@ -1,0 +1,99 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 56;
+  objects = {
+    000000000000000000000001 = {
+      isa = PBXProject;
+      attributes = { LastUpgradeCheck = 2700; };
+      buildConfigurationList = 000000000000000000000007;
+      compatibilityVersion = "Xcode 14.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      knownRegions = (en, Base);
+      mainGroup = 000000000000000000000002;
+      productRefGroup = 000000000000000000000003;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = (000000000000000000000005);
+    };
+    000000000000000000000002 = {
+      isa = PBXGroup;
+      children = (000000000000000000000003);
+      sourceTree = "<group>";
+    };
+    000000000000000000000003 = {
+      isa = PBXGroup;
+      children = (000000000000000000000004);
+      name = Products;
+      sourceTree = "<group>";
+    };
+    000000000000000000000004 = {
+      isa = PBXFileReference;
+      explicitFileType = wrapper.application;
+      includeInIndex = 0;
+      path = MoonMobile.app;
+      sourceTree = BUILT_PRODUCTS_DIR;
+    };
+    000000000000000000000005 = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = 000000000000000000000008;
+      buildPhases = (000000000000000000000006);
+      buildRules = ();
+      dependencies = ();
+      name = MoonMobile;
+      productName = MoonMobile;
+      productReference = 000000000000000000000004;
+      productType = "com.apple.product-type.application";
+    };
+    000000000000000000000006 = {
+      isa = PBXShellScriptBuildPhase;
+      buildActionMask = 2147483647;
+      files = ();
+      inputPaths = ("$(MOON_MOBILE_APP_DIR)/MoonMobile");
+      outputPaths = ("$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)");
+      runOnlyForDeploymentPostprocessing = 0;
+      shellPath = /bin/sh;
+      shellScript = "set -eu\ncp \"$MOON_MOBILE_APP_DIR/MoonMobile\" \"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\"\n";
+      name = "Copy compiled MoonBit executable";
+    };
+    000000000000000000000007 = {
+      isa = XCConfigurationList;
+      buildConfigurations = (000000000000000000000009);
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Debug;
+    };
+    000000000000000000000008 = {
+      isa = XCConfigurationList;
+      buildConfigurations = (00000000000000000000000A);
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Debug;
+    };
+    000000000000000000000009 = {
+      isa = XCBuildConfiguration;
+      buildSettings = {};
+      name = Debug;
+    };
+    00000000000000000000000A = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        ALWAYS_SEARCH_USER_PATHS = NO;
+        ARCHS = arm64;
+        CODE_SIGN_IDENTITY = "Apple Development";
+        CODE_SIGN_STYLE = Automatic;
+        ENABLE_USER_SCRIPT_SANDBOXING = YES;
+        GENERATE_INFOPLIST_FILE = NO;
+        INFOPLIST_FILE = "$(MOON_MOBILE_APP_DIR)/Info.plist";
+        IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+        PRODUCT_BUNDLE_IDENTIFIER = "$(MOON_MOBILE_BUNDLE_ID)";
+        PRODUCT_NAME = MoonMobile;
+        SDKROOT = iphoneos;
+        SUPPORTED_PLATFORMS = iphoneos;
+        TARGETED_DEVICE_FAMILY = "1,2";
+      };
+      name = Debug;
+    };
+  };
+  rootObject = 000000000000000000000001;
+}

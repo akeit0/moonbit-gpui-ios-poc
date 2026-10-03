@@ -1,0 +1,4 @@
+{
+  "host_root": ".deps/gpui-dotnet",
+  "bundle_id": "org.example.moonmobile"
+}
